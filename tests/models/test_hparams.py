@@ -1,4 +1,5 @@
 import os
+import sys
 
 import pytest
 import torch
@@ -7,7 +8,6 @@ from pytorch_lightning import Trainer, LightningModule
 from pytorch_lightning.core.lightning import CHECKPOINT_KEY_MODULE_ARGS
 from tests.base import EvalModelTemplate
 from omegaconf import OmegaConf, DictConfig
-import sys
 
 
 class OmegaConfModel(EvalModelTemplate):
